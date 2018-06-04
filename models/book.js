@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
-var Sahema=mongoose.Schema;
+var Schema=mongoose.Schema;
 
-var  Book = new Sahema({
+var  BookSchema = new Schema({
     text :{
         type: String,
         required : true,
@@ -17,4 +17,7 @@ ISBN :{
     }
 });
 
-module.exports = {Book};
+
+
+const Book = mongoose.model('book',Book)
+module export
